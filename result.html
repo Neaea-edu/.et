@@ -22,7 +22,7 @@
             <div class="re-input">
                 <input type="text" id="school_code" placeholder="  WRITE HERE">
             </div>
-            <div class="img"><a href="#" onclick="redirectToResultPage()"><img src="link.png" alt=""></a></div>
+            <div class="img"><a href="index.html" "><img src="link.png" alt=""></a></div>
         </div>
 
         <div class="re-container">
@@ -121,16 +121,7 @@
             document.getElementById('admission_number').textContent = registrationNumber;
         }
         
-        function redirectToResultPage() {
-            const registrationNumber = document.getElementById('registration_number').value;
-            const schoolCode = document.getElementById('school_code').value;
-
-            // Construct the URL with query parameters
-            const url = `result2.html?registration_number=${encodeURIComponent(registrationNumber)}&school_code=${encodeURIComponent(schoolCode)}`;
-            
-            // Redirect to the constructed URL
-            window.location.href = url;
-        }
+        
     </script>
 </body>
 </html>
